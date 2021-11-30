@@ -1,6 +1,6 @@
 <h1>Let's get a Youtube Video</h1>
 
 <div *ngIf="songUrl">
-  <button type="button" *ngIf="!isPlaying">Play</button>
-  <button type="button" *ngIf="isPlaying">Pause</button>
+  <button type="button" *ngIf="!isPlaying" (click)="play()">Play</button>
+  <button type="button" *ngIf="isPlaying" (click)="pause()">Pause</button>
 </div>
